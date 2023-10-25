@@ -5,7 +5,7 @@ const AboutPage = () => {
   return (
     <div className="py-10">
       <div className="container mx-auto px-4">
-        <h1 className="text-4xl font-bold text-center mb-8">About Us</h1>
+        <h1 className="text-4xl font-bold text-center mb-8 w-fit mx-auto border-b-2 border-blue-300">About Us</h1>
         <div className="text-lg mb-8">
           <p>
             Digital technology has brought about significant changes in our

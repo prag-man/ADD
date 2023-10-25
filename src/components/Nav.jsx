@@ -10,7 +10,7 @@ const Nav = () => {
               <div className="relative h-12 w-12">
                 <Image src={'/images/Anuvrat_Logo-removebg-preview.png'} alt="logo" fill />
               </div>
-              <h4 className="text-xl font-semibold">Anuvrat</h4>
+              <h4 className="text-xl font-semibold">Anuvrat Vishva Bharati Society</h4>
         </div>
       </Link>
         <div className="flex gap-5 items-center">

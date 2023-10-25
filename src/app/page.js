@@ -1,10 +1,10 @@
 import Tabs from "@/components/Tabs.jsx";
 import {BsBoxArrowInRight} from 'react-icons/bs'
-
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex text-center items-center flex-col">
+    <div className="flex text-center items-center flex-col overflow-x-hidden overscroll-x-none">
       <div className="bg-blue-300 w-full py-10">
         <h1 className="text-4xl text-white font-bold text-center">
           Anuvrat Digital Detox
@@ -18,12 +18,16 @@ export default function Home() {
           friends.
         </p>
         <div className="flex items-center justify-center">
-          <button className="bg-yellow-100 mx-6 text-black border-[1px] border-black py-4 px-6 rounded-md">
-            Register Now! 
-          </button>
-          <button className="bg-white border-[1px] border-black text-text py-4 px-6 rounded-md flex gap-2 items-center">
-            Learn More <BsBoxArrowInRight />
-          </button>
+          <Link href='https://forms.gle/1EsB6Gqw73AiveZ99'>
+            <button className="bg-yellow-100 mx-6 text-black border-[1px] border-black py-4 px-6 rounded-md">
+              Register Now! 
+            </button>
+          </Link>
+          <Link href='/about'>
+            <button className="bg-white border-[1px] border-black text-text py-4 px-6 rounded-md flex gap-2 items-center">
+              Learn More <BsBoxArrowInRight />
+            </button>
+          </Link>
         </div>
       </div>
       <div className="flex flex-col w-full items-center">

@@ -1,3 +1,4 @@
+"use client"
 import WheelComponent from "../components/WheelComponent";
 import { useState } from "react";
 
@@ -10,17 +11,17 @@ export default function FortuneWheel() {
     "Digital Dravya Limit",
     "Digital Upwas",
   ];
-  const segColors = ["#4961fd", "#fef19a", "#4961fd", "#fef19a", "#4961fd"];
+  const segColors = ["rgba(53, 162, 235, 0.5)", "rgba(53, 162, 235, 0.5)", "rgba(53, 162, 235, 0.5)", "rgba(53, 162, 235, 0.5)", "rgba(53, 162, 235, 0.5)"];
   const onFinished = (winner) => {
     console.log(winner);
     setWinner(winner);
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen">
+    <div className="flex flex-col items-center justify-center mx-auto">
       <h2>{winner}</h2>
 
-      <div className="container mx-auto">
+      <div className="">
         <WheelComponent
           segments={segments}
           segColors={segColors}
