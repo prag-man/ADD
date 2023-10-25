@@ -1,19 +1,17 @@
 "use client";
+import Tabs from "@/components/Tabs";
 import dynamic from "next/dynamic";
-const GaugeComponent = dynamic(() => import("react-gauge-component"), {
-  ssr: false,
-});
+import {BsBoxArrowInRight} from 'react-icons/bs'
+
+
 export default function Home() {
   return (
-    <div className="flex justify-center text-center items-center flex-col bg-background h-screen pt-4">
-      <div>
-        <h1 className="text-4xl font-bold text-center">
+    <div className="flex text-center items-center flex-col">
+      <div className="bg-blue-300 w-full py-10">
+        <h1 className="text-4xl text-white font-bold text-center">
           Anuvrat Digital Detox
         </h1>
-        <h4 className="text-2xl ml-60 font-semibold text-primary text-center">
-          Add value to your life
-        </h4>
-        <p className="max-w-[75ch] my-4 text-lg  mx-auto text-left">
+        <p className="max-w-[75ch] my-6 text-lg  mx-auto text-center">
           Small (anu), Vows(vrat) towards Digital Detox. Digital detoxing means
           taking a break from using an electronic device or being online for a
           scheduled amount of time. Stepping away from technology allows you to
@@ -21,28 +19,21 @@ export default function Home() {
           stress, improve sleep, and deepen your relationship with family and
           friends.
         </p>
-        <button className="bg-primary mx-6 text-background py-4 px-6 rounded-md">
-          Register Now!
-        </button>
-        <button className="bg-secondary text-text py-4 px-6 rounded-md">
-          About
-        </button>
-        <h2 className="font-extrabold mt-8 text-3xl text-text">
-          Top 3 Pledges!
-        </h2>
+        <div className="flex items-center justify-center">
+          <button className="bg-yellow-100 mx-6 text-black border-[1px] border-black py-4 px-6 rounded-md">
+            Register Now! 
+          </button>
+          <button className="bg-white border-[1px] border-black text-text py-4 px-6 rounded-md flex gap-2 items-center">
+            Learn More <BsBoxArrowInRight />
+          </button>
+        </div>
       </div>
-      <GaugeComponent
-        id="gauge-component4"
-        arc={{
-          width: 0.15,
-          padding: 0,
-      
-        }}
-        miValue={0}
-        maxValue={100000}
-        value={5000}
-        pointer={{ type: "arrow", elastic: true }}
-      />{" "}
+      <div className="flex flex-col w-full items-center">
+        <h2 className="font-extrabold mt-8 text-4xl w-fit mx-auto text-text border-b-2 border-blue-300">
+            Yearly Pledges
+          </h2>
+        <Tabs />
+      </div>
     </div>
   );
 }

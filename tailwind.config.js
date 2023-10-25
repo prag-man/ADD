@@ -1,3 +1,5 @@
+
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -14,6 +16,8 @@ module.exports = {
         primary: "#4961fd",
         secondary: "#fef19a",
         accent: "#021dca",
+        'wheel-yellow': '#FFD700',
+        'wheel-gray': '#DDDDDD'
       },
       fontSize: {
         sm: '0.750rem',
@@ -25,8 +29,8 @@ module.exports = {
         '5xl': '4.210rem',
       },
       fontFamily: {
-        heading: 'Poppins',
-        body: 'Poppins',
+        heading: 'Roboto Slab',
+        body: 'Roboto Slab',
       },
       fontWeight: {
         normal: '400',
