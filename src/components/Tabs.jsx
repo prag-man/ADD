@@ -4,6 +4,7 @@ import LineChartTop3 from "./AreaChart.jsx"
 import { HorizontalBarChartAllPledges } from "./HorizontalBarChart.jsx"
 import { LineChartAge } from "./LineChart.jsx"
 import { useState } from "react"
+import FortuneWheel from "./FortuneWheel.jsx"
 
 const Tabs = () => {
 
@@ -39,7 +40,7 @@ const Tabs = () => {
                 <LineChartAge />
             </div> }
             {toggle === 4 && <div className="w-1/2 flex mx-auto">
-                <h1>Yet to be implemented</h1>
+                <FortuneWheel/>
             </div> }
         </div>
     </div>

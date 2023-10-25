@@ -2,10 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {}
-
-@media (prefers-color-scheme: dark) {
-  :root {}
+:root {
 }
 
-body {}
+@media (prefers-color-scheme: dark) {
+  :root {
+  }
+}
+
+body {
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.wheel {
+  width: 100px;
+  height: 100px;
+  border: 16px solid transparent;
+  border-top-color: #ffcc00;
+  border-radius: 50%;
+  animation: spin 5s linear infinite;
+}
