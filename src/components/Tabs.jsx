@@ -1,8 +1,8 @@
 "use client"
 import dynamic from "next/dynamic"
-import LineChartTop3 from "./AreaChart"
-import { HorizontalBarChartAllPledges } from "./HorizontalBarChart"
-import { LineChartAge } from "./LineChart"
+import LineChartTop3 from "./AreaChart.jsx"
+import { HorizontalBarChartAllPledges } from "./HorizontalBarChart.jsx"
+import { LineChartAge } from "./LineChart.jsx"
 import { useState } from "react"
 
 const Tabs = () => {

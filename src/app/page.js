@@ -1,6 +1,4 @@
-"use client";
-import Tabs from "@/components/Tabs";
-import dynamic from "next/dynamic";
+import Tabs from "@/components/Tabs.jsx";
 import {BsBoxArrowInRight} from 'react-icons/bs'
 
 
