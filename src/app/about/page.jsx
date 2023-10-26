@@ -5,8 +5,8 @@ const AboutPage = () => {
   return (
     <div className="py-10">
       <div className="container mx-auto px-4">
-        <h1 className="text-4xl font-bold text-center mb-8 w-fit mx-auto border-b-2 border-blue-300">About Us</h1>
-        <div className="text-lg mb-8">
+        <h1 className="md:text-4xl text-2xl font-bold text-center mb-6 md:mb-8 w-fit mx-auto border-b-2 border-blue-300">About Us</h1>
+        <div className="md:text-lg mb-6 md:mb-8 md:text-left text-center">
           <p>
             Digital technology has brought about significant changes in our
             lives, both positive and negative. At Anuvrat Vishva Bharati
@@ -25,14 +25,14 @@ const AboutPage = () => {
             connect with their inner selves.
           </p>
         </div>
-        <div className="text-lg mb-8">
+        <div className="md:text-lg mb-8 md:text-left text-center">
           <p>
             Excessive use of digital devices can lead to various problems, such
             as communication gaps, loss of focus, cognitive decline, and mental
             health issues. We aim to address these challenges and provide
             solutions for a healthier digital lifestyle.
           </p>
-          <p className="mt-4">
+          <p className="mt-4 md:text-lg">
             Join us in the ADD (Anuvrat Digital Detox) revolution and take the
             pledge to break free from the digital cage. Our workshops and
             programs will help you understand the ills of the digital age,
@@ -40,9 +40,9 @@ const AboutPage = () => {
             a healthier life.
           </p>
         </div>
-        <div className="text-lg mb-8">
-          <p>For more information and to get involved, please contact us at:</p>
-          <address className="mt-4">
+        <div className="md:text-lg mb-8">
+          <p className="font-semibold">For more information and to get involved, please contact us at:</p>
+          <address className="md:mt-4 mt-2">
             Anuvrat Vishwa Bharati Society
             <br />
             Head Office: Children’s Peace Palace
@@ -57,7 +57,7 @@ const AboutPage = () => {
         <div className="flex items-center justify-center">
           <a
             href="/Digital_Detox_Brochure.pdf" 
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full flex items-center space-x-2 focus:outline-none focus:shadow-outline"
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold md:py-3 md:px-6 py-2 px-4 rounded-full flex gap-2 items-center space-x-2 focus:outline-none focus:shadow-outline"
             download
           >
             <FiDownload />

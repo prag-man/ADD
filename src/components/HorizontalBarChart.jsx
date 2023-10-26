@@ -27,11 +27,7 @@ export const options = {
     },
   },
   responsive: true,
-  plugins: {
-    legend: {
-      position: 'right',
-    },
-  },
+  plugins: {},
   animation: {
     duration: 2000,
     easing: 'easeInOutBounce',
