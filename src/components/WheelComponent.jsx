@@ -12,7 +12,7 @@ const WheelComponent = ({
   size = 290,
   upDuration = 100,
   downDuration = 1000,
-  fontFamily = "proxima-nova"
+  fontFamily = "proxima-nova",
 }) => {
   let currentSegment = "";
   let isStarted = false;
@@ -206,14 +206,15 @@ const WheelComponent = ({
     ctx.clearRect(0, 0, 1000, 800);
   };
   return (
-    <div id="wheel" style={{ width: "100%" }}>
+    <div id="wheel" className="w-screen md:block flex justify-center items-center">
       <canvas
         id="canvas"
         width="600"
         height="600"
         style={{
-          pointerEvents: isFinished && isOnlyOnce ? "none" : "auto"
+          pointerEvents: isFinished && isOnlyOnce ? "none" : "auto",
         }}
+      
       />
       {/* <img
         alt="Pointer Icon"
