@@ -39,7 +39,7 @@ const Tabs = () => {
             {toggle === 3 && <div className="md:w-1/2 h-52 w-full px-5 flex mx-auto">
                 <LineChartAge />
             </div> }
-            {toggle === 4 && <div className="md:w-1/2 flex items-center scale-50 md:scale-100 -my-32 md:my-0 md:ml-[670px]">
+            {toggle === 4 && <div className="md:w-1/2 flex items-center scale-50 md:scale-100 -my-32 md:my-0 md:px-[34%]">
                 <FortuneWheel/>
             </div> }
         </div>
