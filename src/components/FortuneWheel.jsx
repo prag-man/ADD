@@ -35,7 +35,6 @@ export default function FortuneWheel() {
 
   return (
     <div className="w-screen flex flex-col items-center justify-center">
-      <h2>{winner}</h2>
       <div className="">
         <WheelComponent
           segments={segments}
@@ -50,17 +49,19 @@ export default function FortuneWheel() {
         isOpen={isModalOpen}
         onRequestClose={closeModal}
         contentLabel="Result Modal"
-        className="modal-container"
+        className="modal-container bg-yellow-100"
         overlayClassName="modal-overlay"
       >
-        <h2 className="text-xl font-bold">Winner: {winner}</h2>
-        <ConfettiExplosion />
-        <button
-          className="mt-4 px-4 py-2 bg-blue-500 hover:bg-blue-700 text-white rounded"
-          onClick={closeModal}
-        >
-          Close
-        </button>
+        <div className="bg-yellow-100 py-5 -m-10 px-5">
+          <h2 className="text-xl font-bold">Tyaag : {winner}</h2>
+          <ConfettiExplosion />
+          <button
+            className="mt-4 px-4 py-2 bg-blue-500 hover:bg-blue-700 text-white rounded"
+            onClick={closeModal}
+          >
+            I, Pledge!
+          </button>
+        </div>
       </Modal>
     </div>
   );
