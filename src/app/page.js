@@ -19,7 +19,7 @@ export default function Home() {
           friends.
         </p>
         <div className="flex items-center justify-center gap-4 mt-12">
-          <Link href='https://forms.gle/1EsB6Gqw73AiveZ99'>
+          <Link href='/register'>
             <button className="bg-[#987555] md:mx-6 text-base text-white font-semibold md:py-4 py-2 px-3 md:px-6 rounded-md">
               Register Now! 
             </button>
