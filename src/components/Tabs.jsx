@@ -12,19 +12,19 @@ const Tabs = () => {
 
     return <div className="flex flex-col mt-12 w-full">
         <div className="flex gap justify-center items-center md:gap-20 px-5 md:px-20">
-            <h5 className={`md:text-xl text-sm font-semibold md:py-2 py-1 px-2 md:px-4 ${toggle === 1 && 'bg-gray-200'} rounded-xl cursor-pointer`} onClick={(e)=>{
+            <h5 className={`md:text-xl text-sm font-semibold md:py-2 py-1 px-2 md:px-4 ${toggle === 1 && 'bg-[#B99976] bg-opacity-50'} rounded-xl cursor-pointer`} onClick={(e)=>{
                 e.preventDefault()
                 setToggle(1)
                 }}>Top 3 Pledges</h5>
-            <h5 className={`md:text-xl text-sm font-semibold md:py-2 py-1 px-2 md:px-4 ${toggle === 2 && 'bg-gray-200'} rounded-xl cursor-pointer`} onClick={(e)=>{
+            <h5 className={`md:text-xl text-sm font-semibold md:py-2 py-1 px-2 md:px-4 ${toggle === 2 && 'bg-[#B99976] bg-opacity-50'} rounded-xl cursor-pointer`} onClick={(e)=>{
                 e.preventDefault()
                 setToggle(2)
                 }}>All Pedges</h5>
-            <h5 className={`md:text-xl text-sm font-semibold md:py-2 py-1 px-2 md:px-4 ${toggle === 3 && 'bg-gray-200'} rounded-xl cursor-pointer`} onClick={(e)=>{
+            <h5 className={`md:text-xl text-sm font-semibold md:py-2 py-1 px-2 md:px-4 ${toggle === 3 && 'bg-[#B99976] bg-opacity-50'} rounded-xl cursor-pointer`} onClick={(e)=>{
                 e.preventDefault()
                 setToggle(3)
                 }}>Age Group</h5>
-            <h5 className={`md:text-xl text-sm font-semibold md:py-2 py-1 px-2 md:px-4 ${toggle === 4 && 'bg-gray-200'} rounded-xl cursor-pointer`} onClick={(e)=>{
+            <h5 className={`md:text-xl text-sm font-semibold md:py-2 py-1 px-2 md:px-4 ${toggle === 4 && 'bg-[#B99976] bg-opacity-50'} rounded-xl cursor-pointer`} onClick={(e)=>{
                 e.preventDefault()
                 setToggle(4)
                 }}>Fortune Wheel</h5>
@@ -39,7 +39,7 @@ const Tabs = () => {
             {toggle === 3 && <div className="md:w-1/2 h-52 w-full px-5 flex mx-auto">
                 <LineChartAge />
             </div> }
-            {toggle === 4 && <div className="md:w-1/2 flex items-center scale-50 md:scale-100 -my-32 md:my-0 md:px-[34%]">
+            {toggle === 4 && <div className="md:w-1/2 flex items-center scale-50 md:scale-100 -my-32 md:my-0 md:ml-[31%]">
                 <FortuneWheel/>
             </div> }
         </div>

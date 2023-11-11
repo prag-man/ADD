@@ -17,11 +17,7 @@ export default function FortuneWheel() {
   ];
 
   const segColors = [
-    "rgba(53, 162, 235, 0.5)",
-    "rgba(53, 162, 235, 0.5)",
-    "rgba(53, 162, 235, 0.5)",
-    "rgba(53, 162, 235, 0.5)",
-    "rgba(53, 162, 235, 0.5)",
+    "rgba(230, 211, 179, 1)"
   ];
 
   const openModal = (winner) => {
@@ -49,14 +45,14 @@ export default function FortuneWheel() {
         isOpen={isModalOpen}
         onRequestClose={closeModal}
         contentLabel="Result Modal"
-        className="modal-container bg-yellow-100"
+        className="modal-container"
         overlayClassName="modal-overlay"
       >
-        <div className="bg-yellow-100 py-5 -m-10 px-5">
+        <div className="bg-white py-5 -m-10 px-5">
           <h2 className="text-xl font-bold">Tyaag : {winner}</h2>
           <ConfettiExplosion />
           <button
-            className="mt-4 px-4 py-2 bg-blue-500 hover:bg-blue-700 text-white rounded"
+            className="mt-4 px-4 py-2 bg-[#987555] text-white rounded"
             onClick={closeModal}
           >
             I, Pledge!

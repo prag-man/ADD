@@ -42,8 +42,8 @@ export const data = {
     {
       label: 'Pledges',
       data: [300,400,250,300,400],
-      borderColor: 'rgb(53, 162, 235)',
-      backgroundColor: 'rgba(53, 162, 235, 0.5)',
+      borderColor: 'rgba(102, 66, 40, 1)',
+      backgroundColor: 'rgba(209, 180, 140, 1)',
     },
   ],
 };
