@@ -75,7 +75,7 @@ export default function Page() {
             className="text-2xl font-semibold mb-4 cursor-pointer"
             onClick={() => setShowDosAndDonts(!showDosAndDonts)}
           >
-            Do's and Dont's
+            {"Do's and Dont's"}
           </h2>
           {showDosAndDonts && (
             <>
