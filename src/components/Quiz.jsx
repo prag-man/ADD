@@ -7,7 +7,7 @@ const Quiz = ({ questionData }) => {
 
   const handleOptionSelect = (option) => {
     setSelectedOption(option);
-    if(option!=questionData.answer)alert("Try again!")
+    if(option!=questionData.answer)alert("Try again please!")
     setShowConfetti(option === questionData.answer);
   };
 
