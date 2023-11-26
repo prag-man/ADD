@@ -42,7 +42,6 @@ const WheelComponent = ({
 
   const initCanvas = () => {
     let canvas = document.getElementById("canvas");
-    console.log(navigator);
     if (navigator.userAgent.indexOf("MSIE") !== -1) {
       canvas = document.createElement("canvas");
       canvas.setAttribute("width", 1000);
@@ -160,7 +159,7 @@ const WheelComponent = ({
     ctx.lineWidth = 10;
     ctx.strokeStyle = contrastColor;
     ctx.fill();
-    ctx.font = "bold 1em " + fontFamily;
+    ctx.font = "1em " + fontFamily;
     ctx.fillStyle = contrastColor;
     ctx.textAlign = "center";
     ctx.fillText(buttonText, centerX, centerY + 3);

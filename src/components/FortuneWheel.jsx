@@ -9,11 +9,12 @@ export default function FortuneWheel() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const segments = [
-    "Digital Tyaag",
-    "Digital Samayik",
-    "Digital Navkarsi",
-    "Digital Dravya Limit",
-    "Digital Upwas",
+    "Practice Digital Fasting during meals",
+    "Practice Digital Fasting while Driving",
+    "Practice Digital Fasting 30 mins prior to sleep",
+    "Practice Digital Fasting till 30 mins post wakeup",
+    "Practice Digital Fasting between 11PM-7AM",
+    "Add 3 people to ADD Drive"
   ];
 
   const segColors = [
