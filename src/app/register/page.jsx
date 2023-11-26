@@ -6,6 +6,9 @@ import MenuItem from '@mui/material/MenuItem';
 import TextField from '@mui/material/TextField';
 import InputAdornment from '@mui/material/InputAdornment';
 import { countries } from 'countries-list';
+import toast from 'react-hot-toast';
+import database from '../../utils/Firebase';
+import { ref, set, push } from 'firebase/database'
 
 const countryNames = Object.values(countries).map((country) => country.name);
 
@@ -22,6 +25,8 @@ export default function Home() {
   const pledgeSleepFastingRef = useRef(null);
   const pledgeWakeupFastingRef = useRef(null);
   const pledgeAddDriveRef = useRef(null);
+  const ScreenTimeRef = useRef(null);
+  const TopAppsRef = useRef(null);
 
   const [selectedCountry, setSelectedCountry] = useState('');
   const [pledgeList, setPledgeList] = useState([]);
@@ -40,7 +45,7 @@ export default function Home() {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit =async (e) => {
     e.preventDefault();
     const data = {
       name: nameRef.current.value,
@@ -51,9 +56,21 @@ export default function Home() {
       residenceArea: residenceAreaRef.current.value,
       country: selectedCountry,
       pledges: pledgeList,
+      screenTime: ScreenTimeRef.current.value,
+      topApps: TopAppsRef.current.value,
     };
-    console.log(data);
-   
+    try {
+      const dataRef = ref(database, '/entries')
+      const newPostRef = push(dataRef);
+      await set(newPostRef,{
+        data: data,
+      });
+
+      toast.success('Form submitted successfully!')
+    } catch (error) { 
+      console.log(error)
+      toast.error('Form submission unsuccessful!')
+    }
   };
 
   return (
@@ -82,7 +99,14 @@ export default function Home() {
                     type="number"
                     fullWidth
                     required
-                  />
+                  >
+                    <MenuItem value="12-18">12-18 yearls old</MenuItem>
+                    <MenuItem value="18-24">18-24 yearls old</MenuItem>
+                    <MenuItem value="24-32">24-32 yearls old</MenuItem>
+                    <MenuItem value="32-38">32-38 yearls old</MenuItem>
+                    <MenuItem value="38-44">38-34 yearls old</MenuItem>
+                    <MenuItem value="44+">44+ yearls old</MenuItem>
+                  </TextField>
                   <TextField
                     select
                     label="Gender"
@@ -143,19 +167,19 @@ export default function Home() {
                     ))}
                   </TextField>
                 </div>
-                <div className="mb-4">
-                  <label className="block text-lg font-medium ">I Pledge to</label>
-                  <div className="space-y-2">
+                <div className="my-8">
+                  <label className="block text-lg font-medium mb-4">I Pledge to</label>
+                  <div className="space-y-2 mb-4">
                     <FormControlLabel
-                      control={<Checkbox inputRef={pledgeNightFastingRef} color="primary" onChange={() => handlePledgeChange('nightFasting')} />}
+                      control={<Checkbox inputRef={pledgeNightFastingRef} color="primary" onChange={() => handlePledgeChange('Digital Navkarsi')} />}
                       label="Practice Digital Fasting between 11PM-7AM"
                     />
                     <FormControlLabel
-                      control={<Checkbox inputRef={pledgeMealFastingRef} color="primary" onChange={() => handlePledgeChange('mealFasting')} />}
+                      control={<Checkbox inputRef={pledgeMealFastingRef} color="primary" onChange={() => handlePledgeChange('Digital Fasting During Meals')} />}
                       label="Practice Digital Fasting during meals"
                     />
                     <FormControlLabel
-                      control={<Checkbox inputRef={pledgeDrivingFastingRef} color="primary" onChange={() => handlePledgeChange('drivingFasting')} />}
+                      control={<Checkbox inputRef={pledgeDrivingFastingRef} color="primary" onChange={() => handlePledgeChange('Digital Fasting while driving')} />}
                       label="Practice Digital Fasting while Driving"
                     />
                     <FormControlLabel
@@ -169,6 +193,28 @@ export default function Home() {
                     <FormControlLabel
                       control={<Checkbox inputRef={pledgeAddDriveRef} color="primary" onChange={() => handlePledgeChange('addDrive')} />}
                       label="Add 3 people to ADD Drive"
+                    />
+                  </div>
+                  <div className='grid grid-cols-1 gap-4 mb-8'>
+                    <TextField
+                      label="What's you're screen time?"
+                      variant="outlined"
+                      size="small"
+                      inputRef={ScreenTimeRef}
+                      type="number"
+                      helperText="In Hours"
+                      fullWidth
+                      required
+                    />
+                    <TextField
+                      label="What are the 5 most apps you use?"
+                      variant="outlined"
+                      size="small"
+                      inputRef={TopAppsRef}
+                      type="text"
+                      fullWidth
+                      helperText="use comma"
+                      required
                     />
                   </div>
                 </div>

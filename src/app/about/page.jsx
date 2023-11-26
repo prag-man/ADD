@@ -3,7 +3,7 @@ import { FiDownload } from "react-icons/fi";
 
 const AboutPage = () => {
   return (
-    <div className="py-10">
+    <div className="py-10 md:px-24 px-5">
       <div className="container mx-auto px-4">
         <h1 className="md:text-4xl text-2xl font-bold text-center mb-6 md:mb-8 w-fit mx-auto border-b-2 border-blue-300">About Us</h1>
         <div className="md:text-lg mb-6 md:mb-8 md:text-left text-center">

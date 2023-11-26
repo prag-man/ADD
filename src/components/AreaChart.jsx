@@ -37,22 +37,26 @@ import {
       },
   };
   
-  const labels = ['Digital Tyaag', 'Digital Samayik', 'Digital Dravya'];
-  
-  export const data = {
-    labels,
-    datasets: [
-      {
-        fill: true,
-        label: 'Pledges',
-        data: ['400','350','500'],
-        borderColor: 'rgba(102, 66, 40, 1)',
-        backgroundColor: 'rgba(209, 180, 140, 1)',
-      },
-    ],
-  };
 
-  export function LineChartTop3() {
+
+  export function LineChartTop3({Title, Values}) {
+
+    const labels = Title
+  
+    
+    const data = {
+      labels,
+      datasets: [
+        {
+          fill: true,
+          label: 'Pledges',
+          data: Values,
+          borderColor: 'rgba(102, 66, 40, 1)',
+          backgroundColor: 'rgba(209, 180, 140, 1)',
+        },
+      ],
+    };
+    
     return <Line options={options} data={data} />;
   }
 

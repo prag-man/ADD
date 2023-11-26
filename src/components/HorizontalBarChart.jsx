@@ -8,6 +8,7 @@ import {
   Tooltip,
   Legend,
 } from 'chart.js';
+import { values } from 'lodash';
 import { Bar } from 'react-chartjs-2';
 
 ChartJS.register(
@@ -34,20 +35,21 @@ export const options = {
   },
 };
 
-const labels = ['Digital Tyaag', 'Digital Samayik','Digital Navkarsi','Digital Dravya Limit', 'Digital Upavaas'];
+export function HorizontalBarChartAllPledges({Title, Values}) {
 
-export const data = {
-  labels,
-  datasets: [
-    {
-      label: 'Pledges',
-      data: [300,400,250,300,400],
-      borderColor: 'rgba(102, 66, 40, 1)',
-      backgroundColor: 'rgba(209, 180, 140, 1)',
-    },
-  ],
-};
+  const labels = Title
 
-export function HorizontalBarChartAllPledges() {
+  const data = {
+    labels,
+    datasets: [
+      {
+        label: 'Pledges',
+        data: Values,
+        borderColor: 'rgba(102, 66, 40, 1)',
+        backgroundColor: 'rgba(209, 180, 140, 1)',
+      },
+    ],
+  };
+
   return <Bar options={options} data={data} />;
 }

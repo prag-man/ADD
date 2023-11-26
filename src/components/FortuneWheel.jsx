@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import WheelComponent from "../components/WheelComponent";
 import Modal from "react-modal";
 import ConfettiExplosion from "react-confetti-explosion";
-import "@/styles/FortuneWheel.css";
+import "../styles/FortuneWheel.css";
 
 export default function FortuneWheel() {
   const [winner, setWinner] = useState("");

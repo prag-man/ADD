@@ -1,4 +1,4 @@
-import Tabs from "@/components/Tabs.jsx";
+import Tabs from "../components/Tabs";
 import {BsBoxArrowInRight} from 'react-icons/bs'
 import Link from "next/link";
 import Image from "next/image";
@@ -32,7 +32,7 @@ export default function Home() {
         </div>
       </div>
       <div className="flex flex-col w-full items-center">
-        <div className="relative w-[55%] h-10 mt-14">
+        <div className="relative md:w-[55%] w-[70%] md:h-10 h-5 md:mt-14 mt-5">
           <Image src={'/images/TabHeading.png'} fill alt="tab heading" />
         </div>
         {/* <h2 className="font-extrabold mt-8 md:text-4xl text-2xl w-fit mx-auto text-[#664228] border-b-2 border-black">

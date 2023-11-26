@@ -1,9 +1,9 @@
 "use client";
-import Riddle from "@/components/Riddle";
-import Quote from "@/components/Quotes";
-import Quiz from "@/components/Quiz";
+import Riddle from "../../components/Riddle";
+import Quote from "../../components/Quotes";
+import Quiz from "../../components/Quiz";
 import { useState, useEffect } from "react";
-import { quotes, riddles, didYouKnowFacts, dosAndDonts, quizQnA } from '@/utils/data';
+import { quotes, riddles, didYouKnowFacts, dosAndDonts, quizQnA } from '../../utils/data';
 
 export default function Page() {
   const [showRiddles, setShowRiddles] = useState(false);
