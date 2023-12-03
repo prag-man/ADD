@@ -2,6 +2,7 @@ import Tabs from "../components/Tabs";
 import {BsBoxArrowInRight} from 'react-icons/bs'
 import Link from "next/link";
 import Image from "next/image";
+import Gallery from "../components/Gallery"
 
 export default function Home() {
   return (
@@ -39,7 +40,9 @@ export default function Home() {
             Yearly Pledges
           </h2> */}
         <Tabs />
+        <Gallery/>
       </div>
+
     </div>
   );
 }
