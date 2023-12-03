@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import BenifitCard from "../components/BenifitCard";
 import Gallery from "../components/Gallery"
+import Vision from "../components/Vision"
 
 
 export default function Home() {
@@ -57,6 +58,7 @@ export default function Home() {
       <div className="flex flex-col w-full items-center bg gap-8">
         <h1 className="text-2xl font-bold text-[#664228] bg-[#F0DFCD] w-full pt-7 pb-14 -mb-16">Yearly Pledges</h1>
         <Tabs />
+        <Vision/>
         <Gallery/>
       </div>
 
