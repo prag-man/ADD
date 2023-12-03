@@ -1,7 +1,7 @@
 import Image from "next/image";
 export const MakeCommitment = () => {
   return (
-    <section className="flex mt-8 text-left mx-8">
+    <section className="flex mt-8 text-left mx-4 md:mx-8">
       <Image
         src="/images/commitment.webp"
         width={400}

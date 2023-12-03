@@ -1,7 +1,7 @@
 import Image from "next/image";
 export const AssesProgress = () => {
   return (
-    <section className="flex mt-8 text-left mx-8">
+    <section className="flex mt-8 text-left mx-4 md:mx-8">
       <Image
         src="/images/asses.jpeg"
         width={400}

@@ -32,7 +32,7 @@ const Vision = () => {
   };
 
   return (
-    <section className="p-4">
+    <section className="p-4 max-w-[100vw]">
       <h1 className="text-2xl font-bold text-center">
         Anuvrat Digital Detox Mission
       </h1>
