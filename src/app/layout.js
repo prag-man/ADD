@@ -2,6 +2,7 @@ import { Nunito } from 'next/font/google'
 import '../styles/globals.css'
 import Nav from '../components/Nav.jsx'
 import { Toaster } from 'react-hot-toast'
+import Footer from '../components/Footer.jsx'
 
 const nunito = Nunito({ subsets: ['latin'] })
 
@@ -17,6 +18,7 @@ export default function RootLayout({ children }) {
         <Toaster />
         <Nav />
         {children}
+        <Footer />
       </body>
     </html>
   )

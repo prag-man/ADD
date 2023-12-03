@@ -1,6 +1,7 @@
 import { Nunito } from "next/font/google";
 import { FaInstagram, FaFacebook } from "react-icons/fa";
 import Image from "next/image";
+import Link from "next/link";
 
 const nunito = Nunito({
   subsets: ["latin"],
@@ -10,27 +11,23 @@ const Gallery = () => {
   const images = [
     "/images/mahashramanji.jpeg",
     "/images/image1.jpeg",
-    "/images/image2.jpeg",
-    "/images/image3.jpeg",
   ];
 
   return (
-    <section
-      className={`bg-[#664228] text-gray-300 w-screen py-8 ${nunito.className}`}
-    >
-      <div className="m-4 md:mx-8 flex md:justify-between md:items-center">
-        <div className="max-w-[60%] flex md:max-w-[100%] ">
+    <div className={`bg-[#664228] md:px-20 text-gray-300 w-full py-8 ${nunito.className}`}>
+      <div className="m-4 md:mx-8  flex md:justify-between md:items-center">
+        <div className=" flex md:flex-row flex-col justify-between items-center">
           <div>
             <h1 className="font-semibold text-2xl text-left">
               We did a lot during this time
             </h1>
             <div className="flex opacity-80 gap-4 mt-2">
-              <FaInstagram size={40} color="white" />
-              <FaFacebook size={40} color="white" />
+              <Link href={'/'}><FaInstagram size={40} color="white" /></Link>
+              <Link href={'/'}><FaFacebook size={40} color="white" /></Link>
             </div>
           </div>
 
-          <div className="md:flex gap-12 md:mx-16 text-left max-w-[70ch] mt-4">
+          <div className="md:flex gap-12 md:mx-16 text-left max-w-[70ch] mt-12 md:mt-44">
             <div>
               <h1 className="font-bold text-xl">4K</h1>
               <p className="text-lg opacity-60">Detoxing On a Monthly Basis</p>
@@ -50,35 +47,31 @@ const Gallery = () => {
           </div>
         </div>
         <div className="max-w-[40%] ">
-          <div className="md:hidden block">
+          <div className="relative rounded-lg md:h-[300px] h-[150px] w-[150px] md:w-[300px]">
             {" "}
             {/* Show on medium and larger screens */}
             <Image
               src={images[0]}
               alt={`Image 1`}
-              layout="responsive"
-              width={300}
-              height={200}
-              className="rounded-md"
+              fill
+              className="rounded-lg"
             />
           </div>
         </div>
       </div>
-      <div className="flex flex-wrap gap-2 md:gap-4 justify-center mx-12 mt-8">
+      <div className="flex flex-wrap gap-2 md:gap-5 justify-start mx-12 mt-14">
         {images.slice(1).map((image, index) => (
-          <div key={index} className="rounded-md overflow-hidden">
+          <div key={index} className="rounded-md relative h-[300px] w-[400px]">
             <Image
               src={image}
               alt={`Image ${index + 2}`}
-              layout="responsive"
-              width={300}
-              height={200}
-              className="rounded-md"
+              fill
+              className="rounded-lg"
             />
           </div>
         ))}
       </div>
-    </section>
+    </div>
   );
 };
 
