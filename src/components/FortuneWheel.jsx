@@ -46,11 +46,12 @@ export default function FortuneWheel() {
         isOpen={isModalOpen}
         onRequestClose={closeModal}
         contentLabel="Result Modal"
-        className="modal-container"
+        className="modal-container bg-white border-white"
         overlayClassName="modal-overlay"
       >
         <div className="bg-white py-5 -m-10 px-5">
           <h2 className="text-xl font-bold">Tyaag : {winner}</h2>
+          <p className="text-[#00000073]">In the view of Acharya Tulsi, the founder of Anuvrat Movement, this movement is a project for spiritual and moral rejuvenation of life. Its objective is much higher than man’s social and political good. It aims at his spiritual or moral good.</p>
           <ConfettiExplosion />
           <button
             className="mt-4 px-4 py-2 bg-[#987555] text-white rounded"
