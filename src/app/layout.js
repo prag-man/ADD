@@ -1,9 +1,9 @@
-import { Inter } from 'next/font/google'
+import { Nunito } from 'next/font/google'
 import '../styles/globals.css'
 import Nav from '../components/Nav.jsx'
 import { Toaster } from 'react-hot-toast'
 
-const inter = Inter({ subsets: ['latin'] })
+const nunito = Nunito({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Anuvrat Digital Detox',
@@ -13,7 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={nunito.className}>
         <Toaster />
         <Nav />
         {children}

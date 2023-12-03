@@ -52,34 +52,36 @@ const Tabs = () => {
 
     TempTop3 = Object.fromEntries(Object.entries(AllPledges).sort((a, b) => b[1] - a[1]).slice(0, 3))
 
-    return <div className="flex flex-col mt-12 w-full">
-        <div className="flex gap justify-center items-center md:gap-20 px-5 md:px-20">
-            <h5 className={`md:text-xl text-sm font-semibold md:py-2 py-1 px-2 md:px-4 ${toggle === 1 && 'bg-[#B99976] bg-opacity-50'} rounded-xl cursor-pointer`} onClick={(e)=>{
-                e.preventDefault()
-                setToggle(1)
-                }}>Top 3 Pledges</h5>
-            <h5 className={`md:text-xl text-sm font-semibold md:py-2 py-1 px-2 md:px-4 ${toggle === 2 && 'bg-[#B99976] bg-opacity-50'} rounded-xl cursor-pointer`} onClick={(e)=>{
-                e.preventDefault()
-                setToggle(2)
-                }}>All Pedges</h5>
-            <h5 className={`md:text-xl text-sm font-semibold md:py-2 py-1 px-2 md:px-4 ${toggle === 3 && 'bg-[#B99976] bg-opacity-50'} rounded-xl cursor-pointer`} onClick={(e)=>{
-                e.preventDefault()
-                setToggle(3)
-                }}>Age Group</h5>
-            <h5 className={`md:text-xl text-sm font-semibold md:py-2 py-1 px-2 md:px-4 ${toggle === 4 && 'bg-[#B99976] bg-opacity-50'} rounded-xl cursor-pointer`} onClick={(e)=>{
-                e.preventDefault()
-                setToggle(4)
-                }}>Fortune Wheel</h5>
+    return <div className="flex flex-col w-full ">
+        <div className="flex items-center justify-center">
+            <div className="flex gap justify-center items-center md:gap-20 py-3 md:px-20  bg-[#FFFCF9] w-fit shadow-lg text-center rounded-lg">
+                <h5 className={`md:text-xl text-sm font-semibold md:py-2 py-1 px-2 md:px-4 ${toggle === 1 && 'bg-[#50321d] text-white bg-opacity-50'} rounded-xl cursor-pointer`} onClick={(e)=>{
+                    e.preventDefault()
+                    setToggle(1)
+                    }}>Top 3 Pledges</h5>
+                <h5 className={`md:text-xl text-sm font-semibold md:py-2 py-1 px-2 md:px-4 ${toggle === 2 && 'bg-[#50321d] text-white bg-opacity-50'} rounded-xl cursor-pointer`} onClick={(e)=>{
+                    e.preventDefault()
+                    setToggle(2)
+                    }}>All Pedges</h5>
+                <h5 className={`md:text-xl text-sm font-semibold md:py-2 py-1 px-2 md:px-4 ${toggle === 3 && 'bg-[#50321d] text-white bg-opacity-50'} rounded-xl cursor-pointer`} onClick={(e)=>{
+                    e.preventDefault()
+                    setToggle(3)
+                    }}>Age Group</h5>
+                <h5 className={`md:text-xl text-sm font-semibold md:py-2 py-1 px-2 md:px-4 ${toggle === 4 && 'bg-[#50321d] text-white bg-opacity-50'} rounded-xl cursor-pointer`} onClick={(e)=>{
+                    e.preventDefault()
+                    setToggle(4)
+                    }}>Fortune Wheel</h5>
+            </div>
         </div>
         <div className="top-3 flex flex-col md:my-20 my-10">
-            {toggle === 1 && <div className="md:w-1/2 h-52 w-full px-5 flex mx-auto">
+            {toggle === 1 && <div className="md:w-1/2 h-fit p-5 w-full px-5 flex mx-auto shadow-lg">
                 {/* {console.log(Top3)} */}
                 <LineChartTop3 Title={Object.keys(TempTop3)} Values={Object.values(TempTop3)}/>
             </div> }
-            {toggle === 2 && <div className="md:w-1/2 h-52 w-full px-5 flex mx-auto">
+            {toggle === 2 && <div className="md:w-1/2 h-fit w-full px-5 flex mx-auto p-5 shadow-lg">
                 {AllPledges && <HorizontalBarChartAllPledges Title={Object.keys(AllPledges)} Values={Object.values(AllPledges)}/>}
             </div> }
-            {toggle === 3 && <div className="md:w-1/2 h-52 w-full px-5 flex mx-auto">
+            {toggle === 3 && <div className="md:w-1/2 h-fit w-full px-5 flex mx-auto p-5 shadow-lg">
 
                 {ageGroup && <LineChartAge Title={Object.keys(ageGroup)} Values={Object.values(ageGroup)}/>}
             </div> }
