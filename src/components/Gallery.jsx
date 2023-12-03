@@ -1,5 +1,5 @@
 import { Nunito } from "next/font/google";
-import { FaInstagram, FaFacebook } from "react-icons/fa";
+import { FaInstagram, FaFacebook, FaYoutube } from "react-icons/fa";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -11,6 +11,14 @@ const Gallery = () => {
   const images = [
     "/images/mahashramanji.jpeg",
     "/images/image1.jpeg",
+    "/images/image4.jpg",
+    "/images/image5.jpg",
+    "/images/image6.jpg",
+    "/images/image7.jpg",
+    "/images/image8.jpg",
+    "/images/image9.jpg",
+    "/images/image10.jpg",
+    "/images/image12.jpg",
   ];
 
   return (
@@ -21,9 +29,10 @@ const Gallery = () => {
             <h1 className="font-semibold text-2xl text-left">
               We did a lot during this time
             </h1>
-            <div className="flex opacity-80 gap-4 mt-2">
-              <Link href={'/'}><FaInstagram size={40} color="white" /></Link>
-              <Link href={'/'}><FaFacebook size={40} color="white" /></Link>
+            <div className="flex opacity-80 gap-4 mt-2 items-center">
+              <Link href={'https://instagram.com/anuvrat_digitaldetox'}><FaInstagram size={40} color="white" /></Link>
+              <Link href={'https://www.facebook.com/anuvibha.page?mibextid=ZbWKwL'}><FaFacebook size={38} color="white" /></Link>
+              <Link href={'https://youtube.com/@ANUVIBHA?si=qQYoxKXgqOdXtIAG'}><FaYoutube size={48} color="white" /></Link>
             </div>
           </div>
 
@@ -67,6 +76,7 @@ const Gallery = () => {
               alt={`Image ${index + 2}`}
               fill
               className="rounded-lg"
+              objectFit="cover"
             />
           </div>
         ))}

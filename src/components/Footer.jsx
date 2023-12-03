@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { FaInstagram, FaFacebook } from "react-icons/fa";
+import { FaInstagram, FaFacebook, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -18,6 +18,7 @@ const Footer = () => {
         <div className="flex md:gap-5 gap-2 items-center opacity-50">
               <Link href={'/'}><FaInstagram size={40} color="#664228" /></Link>
               <Link href={'/'}><FaFacebook size={38} color="#664228" /></Link>
+              <Link href={'https://youtube.com/@ANUVIBHA?si=qQYoxKXgqOdXtIAG'}><FaYoutube size={48} color="#664228" /></Link>
         </div>
     </div>
   )
