@@ -29,14 +29,14 @@ const Gallery = () => {
             <h1 className="font-semibold text-2xl text-left">
               We did a lot during this time
             </h1>
-            <div className="flex opacity-80 gap-4 mt-2 items-center">
+            <div className="flex opacity-80 gap-4 mt-4 items-center">
               <Link href={'https://instagram.com/anuvrat_digitaldetox'}><FaInstagram size={40} color="white" /></Link>
               <Link href={'https://www.facebook.com/anuvibha.page?mibextid=ZbWKwL'}><FaFacebook size={38} color="white" /></Link>
               <Link href={'https://youtube.com/@ANUVIBHA?si=qQYoxKXgqOdXtIAG'}><FaYoutube size={48} color="white" /></Link>
             </div>
           </div>
 
-          <div className="md:flex gap-12 md:mx-16 text-left max-w-[70ch] mt-12 md:mt-44">
+          <div className="md:flex gap-12 md:mx-16 text-left max-w-[70ch] mt-12 md:mt-0 justify-center">
             <div>
               <h1 className="font-bold text-xl">4K</h1>
               <p className="text-lg opacity-60">Detoxing On a Monthly Basis</p>
@@ -68,9 +68,9 @@ const Gallery = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-wrap gap-2 md:gap-5 justify-start mx-12 mt-14">
+      <div className="flex flex-wrap justify-center gap-4 md:gap-5 md:justify-start mx-12 mt-14">
         {images.slice(1).map((image, index) => (
-          <div key={index} className="rounded-md relative h-[300px] w-[400px]">
+          <div key={index} className="rounded-md relative md:h-[300px] h-[150px] w-[150px] md:w-[400px]">
             <Image
               src={image}
               alt={`Image ${index + 2}`}

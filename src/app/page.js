@@ -13,7 +13,7 @@ export default function Home() {
         <div className="flex-1 flex flex-col text-center md:text-left md:ml-20 md:py-14 py-7 items-center md:items-start px-7 md:px-0">
           <h1 className="text-2xl md:text-3xl font-semibold text-[#664228] mb-4">Anuvrat Digital Detox</h1>
           <p className="text-[#999999] w-[90%]">Small (anu), Vows(vrat) towards Digital Detox. Digital detoxing means taking a break from using an electronic device or being online for a scheduled amount of time. Stepping away from technology allows you to be more present with yourself & your loved ones. It may also relieve stress, improve sleep, and deepen your relationship with family & friends.</p>
-          <button className="rounded-3xl px-4 py-2 text-base md:text-lg font-medium bg-[#664228] w-fit text-white mt-10">Take a Pledge</button>
+          <Link href='/register' ><button className="rounded-3xl px-4 py-2 text-base md:text-lg font-medium bg-[#664228] w-fit text-white mt-10">Take a Pledge</button></Link>
         </div>
         <div className="flex-1 relative md:h-[450px] h-[100px] w-full hidden overflow-clip no-scrollbar mr-16 md:block">
           <Image src='/images/home-banner.png' fill alt="banner" />

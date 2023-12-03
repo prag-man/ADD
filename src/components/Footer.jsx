@@ -16,8 +16,8 @@ const Footer = () => {
         </div>
       </Link>
         <div className="flex md:gap-5 gap-2 items-center opacity-50">
-              <Link href={'/'}><FaInstagram size={40} color="#664228" /></Link>
-              <Link href={'/'}><FaFacebook size={38} color="#664228" /></Link>
+              <Link href={'https://instagram.com/anuvrat_digitaldetox'}><FaInstagram size={40} color="#664228" /></Link>
+              <Link href={'https://www.facebook.com/anuvibha.page?mibextid=ZbWKwL'}><FaFacebook size={38} color="#664228" /></Link>
               <Link href={'https://youtube.com/@ANUVIBHA?si=qQYoxKXgqOdXtIAG'}><FaYoutube size={48} color="#664228" /></Link>
         </div>
     </div>
