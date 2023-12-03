@@ -107,11 +107,7 @@ const Vision = () => {
           Why did we start this?
         </h2>
         <p className="max-w-[65ch] text-gray-500 mt-4 mx-auto md:mx-0 font-bold">
-          Mohan Bhai was greatly impressed by the lives of Mahatma Gandhi and
-          Acharya Tulsi. He actively associated himself with the Anuvrat
-          Movement of Acharya Tulsi which aims at the self transformation of an
-          individual. He was honoured with the prestigious Anuvrat AWARD for his
-          selfless and dedicated services in this field.
+        "Anuvrat Digital Detox envisions a balanced, mindful lifestyle in today's digital age. Our mission is to empower individuals to prioritize well-being, fostering a deeper connection with their inner selves. Through awareness and intentional choices, we aim to inspire a cultural shift towards a healthier relationship with technology, enriching lives for a more fulfilling existence."
         </p>
       </div>
       <Image src="/images/fomo-1.png" height={500} width={400} alt="Vision" className="rounded-md hidden md:block"/>
