@@ -41,9 +41,9 @@ const Vision = () => {
         the world we inhabit.
       </p>
       <div className="relative mt-4">
-        <div className="flex justify-between space-x-4 z-50 overflow-scroll">
+        <div className="flex justify-between space-x-4 z-50">
           <button
-            className={`p-2 px-4 rounded-md text-[#D1B48C] ${
+            className={`p-2 md:px-4 rounded-md text-[#D1B48C] ${
               activeButton === "FOMO"
                 ? "bg-[#664228] text-white"
                 : "bg-[#FBF6F1]"
@@ -53,7 +53,7 @@ const Vision = () => {
             FOMO
           </button>
           <button
-            className={`p-2 px-4 rounded-md text-[#D1B48C] ${
+            className={`p-2 md:px-4 rounded-md text-[#D1B48C] ${
               activeButton === "Create goals"
                 ? "bg-[#664228] text-white"
                 : "bg-[#FBF6F1]"
@@ -63,7 +63,7 @@ const Vision = () => {
             Create goals
           </button>
           <button
-            className={`p-2 px-4 rounded-md text-[#D1B48C] ${
+            className={`p-2 md:px-4 rounded-md text-[#D1B48C] ${
               activeButton === "Gather support"
                 ? "bg-[#664228] text-white"
                 : "bg-[#FBF6F1]"
@@ -73,7 +73,7 @@ const Vision = () => {
             Gather support
           </button>
           <button
-            className={`p-2 px-4 rounded-md text-[#D1B48C] ${
+            className={`p-2 md:px-4 md:block hidden rounded-md text-[#D1B48C] ${
               activeButton === "Make commitment"
                 ? "bg-[#664228] text-white"
                 : "bg-[#FBF6F1]"
@@ -83,7 +83,7 @@ const Vision = () => {
             Make commitment
           </button>
           <button
-            className={`p-2 px-4 rounded-md text-[#D1B48C] ${
+            className={`p-2 md:px-4 md:block hidden rounded-md text-[#D1B48C] ${
               activeButton === "Assess progress"
                 ? "bg-[#664228] text-white"
                 : "bg-[#FBF6F1]"
@@ -93,20 +93,20 @@ const Vision = () => {
             Assess progress
           </button>
         </div>
-        <div className="absolute left-0 right-0 bottom-4 z-[-4] h-[2px] bg-[#D1B48C]"></div>
+        <div className= "overflow-hidden no-scrollbar absolute left-0 right-0 bottom-4 z-[-4] h-[2px] bg-[#D1B48C]"></div>
       </div>
       {renderContent(activeButton)}
 
-      <div className="mt-8 text-left">
-        <h1 className="bg-gradient-to-tr font-bold from-[#987555] bg-opacity-60 to-transparent text-left w-max py-2 text-2xl text-[#987555] px-8">
+      <div className="mt-8 mx-autor">
+        <h1 className="bg-gradient-to-r mx-auto md:mx-0 font-bold from-[#D1B48C] bg-opacity-5 to-white text-left w-max py-2 text-2xl text-[#987555] px-8">
           Our vision
         </h1>
      <div className="flex ">
-      <div className="mr-12">
-        <h2 className="text-2xl mt-4 text-left font-semibold">
+      <div className="md:mr-12 px-10 md:px-0">
+        <h2 className="text-2xl mt-4 md:text-left text-center font-semibold mx-auto md:mx-0 md:font-bold">
           Why did we start this?
         </h2>
-        <p className="max-w-[65ch] text-gray-500 mt-4">
+        <p className="max-w-[65ch] text-gray-500 mt-4 mx-auto md:mx-0 font-bold">
           Mohan Bhai was greatly impressed by the lives of Mahatma Gandhi and
           Acharya Tulsi. He actively associated himself with the Anuvrat
           Movement of Acharya Tulsi which aims at the self transformation of an
