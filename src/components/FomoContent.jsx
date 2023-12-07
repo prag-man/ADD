@@ -11,7 +11,7 @@ export const FomoContent = () => {
       />
       <p className="max-w-[65ch] ml-8 md:mt-4">
         {
-          "In the view of Acharya Tulsi, the founder of Anuvrat Movement, this movement is a project for spiritual and moral rejuvenation of life. Its objective is much higher than man’s social and political good. It aims at his spiritual or moral good. The spiritual good is not only the highest good but the total good. It includes both one’s own good and the good of others."
+          "In Acharya Tulsi's perspective, the Anuvrat Movement is a project dedicated to the spiritual and moral renewal of life. Its aim extends beyond the societal and political welfare of individuals, focusing on their spiritual and moral betterment. Spiritual well-being is regarded as the highest and comprehensive good, encompassing both personal and communal welfare"
         }
       </p>
     </section>

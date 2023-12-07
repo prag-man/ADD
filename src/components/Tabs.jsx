@@ -55,19 +55,19 @@ const Tabs = () => {
     return <div className="flex flex-col w-full ">
         <div className="flex items-center justify-center">
             <div className="flex gap justify-center items-center md:gap-20 py-3 md:px-20 px-3 mx-3  bg-[#FFFCF9] w-fit shadow-lg text-center rounded-lg">
-                <h5 className={`md:text-xl text-sm font-semibold md:py-2 py-1 px-2 md:px-4 ${toggle === 1 && 'bg-[#50321d] text-white bg-opacity-50'} md:rounded-xl rounded-lg cursor-pointer`} onClick={(e)=>{
+                <h5 className={`md:text-xl z-10 text-sm font-semibold md:py-2 py-1 px-2 md:px-4 ${toggle === 1 && 'bg-[#664228] text-white'} md:rounded-xl rounded-lg cursor-pointer`} onClick={(e)=>{
                     e.preventDefault()
                     setToggle(1)
                     }}>Top 3 Pledges</h5>
-                <h5 className={`md:text-xl text-sm font-semibold md:py-2 py-1 px-2 md:px-4 ${toggle === 2 && 'bg-[#50321d] text-white bg-opacity-50'} md:rounded-xl rounded-lg cursor-pointer`} onClick={(e)=>{
+                <h5 className={`md:text-xl z-10 text-sm font-semibold md:py-2 py-1 px-2 md:px-4 ${toggle === 2 && 'bg-[#664228] text-white'} md:rounded-xl rounded-lg cursor-pointer`} onClick={(e)=>{
                     e.preventDefault()
                     setToggle(2)
                     }}>All Pedges</h5>
-                <h5 className={`md:text-xl text-sm font-semibold md:py-2 py-1 px-2 md:px-4 ${toggle === 3 && 'bg-[#50321d] text-white bg-opacity-50'} md:rounded-xl rounded-lg cursor-pointer`} onClick={(e)=>{
+                <h5 className={`md:text-xl z-10 text-sm font-semibold md:py-2 py-1 px-2 md:px-4 ${toggle === 3 && 'bg-[#664228] text-white'} md:rounded-xl rounded-lg cursor-pointer`} onClick={(e)=>{
                     e.preventDefault()
                     setToggle(3)
                     }}>Age Group</h5>
-                <h5 className={`md:text-xl text-sm font-semibold md:py-2 py-1 px-2 md:px-4 ${toggle === 4 && 'bg-[#50321d] text-white bg-opacity-50'} md:rounded-xl rounded-lg cursor-pointer`} onClick={(e)=>{
+                <h5 className={`md:text-xl z-10 text-sm font-semibold md:py-2 py-1 px-2 md:px-4 ${toggle === 4 && 'bg-[#664228] text-white'} md:rounded-xl rounded-lg cursor-pointer`} onClick={(e)=>{
                     e.preventDefault()
                     setToggle(4)
                     }}>Fortune Wheel</h5>

@@ -22,7 +22,7 @@ const Gallery = () => {
   ];
 
   return (
-    <div className={`bg-[#664228] md:px-20 text-gray-300 w-full py-8 ${nunito.className}`}>
+    <div className={`bg-[#664228] md:px-20 text-gray-300 w-full py-8 ${nunito.className} gallery`} id="gallery">
       <div className="m-4 md:mx-8  flex md:justify-between md:items-center">
         <div className=" flex md:flex-row flex-col justify-between items-center">
           <div>
@@ -68,7 +68,7 @@ const Gallery = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-wrap justify-center gap-4 md:gap-5 md:justify-start mx-12 mt-14">
+      <div className="flex flex-wrap justify-center gap-4 md:gap-5 md:justify-start mt-14">
         {images.slice(1).map((image, index) => (
           <div key={index} className="rounded-md relative md:h-[300px] h-[150px] w-[150px] md:w-[400px]">
             <Image

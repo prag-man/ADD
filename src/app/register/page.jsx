@@ -184,15 +184,15 @@ export default function Home() {
                     />
                     <FormControlLabel
                       control={<Checkbox inputRef={pledgeSleepFastingRef} color="primary" onChange={() => handlePledgeChange('sleepFasting')} />}
-                      label="Practice Digital Fasting 30 mins prior to sleep"
+                      label="Practice Digital Fasting 30 mins before bedtime"
                     />
                     <FormControlLabel
                       control={<Checkbox inputRef={pledgeWakeupFastingRef} color="primary" onChange={() => handlePledgeChange('wakeupFasting')} />}
-                      label="Practice Digital Fasting till 30 mins post wakeup"
+                      label="Practice Digital Fasting for first 30 mins after waking up"
                     />
                     <FormControlLabel
                       control={<Checkbox inputRef={pledgeAddDriveRef} color="primary" onChange={() => handlePledgeChange('addDrive')} />}
-                      label="Add 3 people to ADD Drive"
+                      label="Bring 3 new people to Anuvrat Digital Detox Program"
                     />
                   </div>
                   <div className='grid grid-cols-1 gap-4 mb-8'>
@@ -207,7 +207,7 @@ export default function Home() {
                       required
                     />
                     <TextField
-                      label="What are the 5 most apps you use?"
+                      label="What are the 5 you use most often?"
                       variant="outlined"
                       size="small"
                       inputRef={TopAppsRef}

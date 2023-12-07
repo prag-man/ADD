@@ -32,7 +32,7 @@ const Vision = () => {
   };
 
   return (
-    <section className="p-4 max-w-[100vw]">
+    <section className="p-4 max-w-[100vw] vision" id="vision">
       <h1 className="text-2xl font-bold text-center">
         Anuvrat Digital Detox Mission
       </h1>
@@ -40,7 +40,7 @@ const Vision = () => {
         We genuinely care about the well-being of individuals, communities, and
         the world we inhabit.
       </p>
-      <div className="relative mt-4">
+      <div className="relative mt-10">
         <div className="flex justify-between space-x-4 z-50">
           <button
             className={`p-2 md:px-4 rounded-md text-[#D1B48C] ${
@@ -98,8 +98,8 @@ const Vision = () => {
       {renderContent(activeButton)}
 
       <div className="mt-8 mx-autor">
-        <h1 className="bg-gradient-to-r mx-auto md:mx-0 font-bold from-[#D1B48C] bg-opacity-5 to-white text-left w-max py-2 text-2xl text-[#987555] px-8">
-          Our vision
+        <h1 className="mx-auto md:mx-0 font-bold from-white to-[#D1B48C] text-left w-max py-2 text-2xl text-[#987555] px-8">
+          Our <span className="bg-gradient-to-r p-2 bg-opacity-5 from-white to-[#fae8d0]">Vision</span>
         </h1>
      <div className="flex ">
       <div className="md:mr-12 px-10 md:px-0">
