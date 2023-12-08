@@ -33,11 +33,11 @@ const Nav = () => {
             <Link href={'/resources'} className="md:text-xl font-semibold">Resources</Link>
         </div>
         <div>
-            <a href='tel:+919653852087' className="md:text-xl font-semibold text-[#664228CC] flex gap-3 items-center">
+            <a href='tel:+917045291313' className="md:text-xl font-semibold text-[#664228CC] flex gap-3 items-center">
               <div className="relative h-5 w-5">
                 <Image src={'/images/call.png'} alt="phone" fill />
               </div>
-              <p>9653852087</p>
+              <p>7045291313</p>
             </a>
         </div>
         <div className="md:hidden">
