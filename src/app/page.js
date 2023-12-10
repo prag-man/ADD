@@ -20,9 +20,7 @@ export default function Home() {
           <Image src='/images/home-banner.png' fill alt="banner" />
           <div className="ellipse h-[500px] mt-[242px] w-full rounded-[50%] bg-gradient-to-b from-[#66422880] via-white to-white absolute">
             <div className="h-full w-full bg-white mt-1 rounded-[50%] flex justify-center">
-              <div className="relative h-32 w-[400px] mt-10"> 
-                <Image src='/images/anu.png' fill alt="ellipse" />
-              </div>
+             <h1 className="mt-[10%] text-2xl text-[#664228] font-bold">Anuvrat Vishwa Bharti Society</h1>
             </div>
           </div>
         </div>
@@ -31,7 +29,7 @@ export default function Home() {
             <Image src='/images/home-banner.png' fill alt="banner" />
           </div>
           <div className="relative h-[55px] -mt-[26%] w-1/2 mx-auto">
-           <Image src='/images/anu.png' fill alt="ellipse" />
+          <h1 className="text-lg text-[#664228] font-bold">Anuvrat Vishwa Bharti Society</h1>
           </div>                
         </div>
       </div>
