@@ -28,8 +28,8 @@ export default function Home() {
           <div className="relative h-[260px] w-full">
             <Image src='/images/home-banner.png' fill alt="banner" />
           </div>
-          <div className="relative h-[55px] -mt-[26%] w-1/2 mx-auto">
-          <h1 className="text-lg text-[#664228] font-bold">Anuvrat Vishwa Bharti Society</h1>
+          <div className="relative h-[55px] -mt-[26%] mx-auto">
+          <h1 className="text-base text-[#664228] font-bold">Anuvrat Vishwa Bharti Society</h1>
           </div>                
         </div>
       </div>
