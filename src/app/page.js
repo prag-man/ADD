@@ -30,6 +30,7 @@ export default function Home() {
           </div>
           <div className="relative h-[55px] -mt-[26%] mx-auto">
           <h1 className=" text-lg text-[#664228] font-bold">Anuvrat Vishva Bharati Society</h1>
+          <span className=" italic text-base text-[#664228]">Presents</span>
           </div>                
         </div>
       </div>
