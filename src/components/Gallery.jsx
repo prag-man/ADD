@@ -68,7 +68,7 @@ const Gallery = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-wrap justify-center gap-4 md:gap-5 md:justify-start mt-14">
+      {/* <div className="flex flex-wrap justify-center gap-4 md:gap-5 md:justify-start mt-14">
         {images.slice(1).map((image, index) => (
           <div key={index} className="rounded-md relative md:h-[300px] h-[150px] w-[150px] md:w-[400px]">
             <Image
@@ -80,7 +80,7 @@ const Gallery = () => {
             />
           </div>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };
