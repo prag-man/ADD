@@ -55,8 +55,8 @@ const Gallery = () => {
             </div>
           </div>
         </div>
-        <div className="max-w-[40%] ">
-          <div className="relative rounded-lg md:h-[300px] h-[150px] w-[150px] md:w-[300px]">
+        <div className="">
+          <div className="relative rounded-lg md:h-[300px] h-[150px] w-[150px] md:w-[300px] ">
             {" "}
             {/* Show on medium and larger screens */}
             <Image

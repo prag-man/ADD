@@ -18,7 +18,6 @@ const Footer = () => {
                 <Image src={'/images/amrit.png'} alt="logo" fill />
               </div>
               <h4 className="md:text-xl text-[#2A166F] font-semibold md:block hidden">Anuvrat Vishva Bharati Society</h4>
-              <h4 className="md:text-xl text-[#2A166F] font-semibold md:hidden block">Anuvrat</h4>
         </div>
       </Link>
       <div>
@@ -29,11 +28,11 @@ const Footer = () => {
               <p>7045291313</p>
             </a>
         </div>
-        <div className="flex md:gap-5 gap-2 items-center opacity-50">
+        {/* <div className="flex md:gap-5 gap-2 items-center opacity-50">
               <Link href={'https://instagram.com/anuvrat_digitaldetox'}><FaInstagram size={40} color="#664228" /></Link>
               <Link href={'https://www.facebook.com/anuvibha.page?mibextid=ZbWKwL'}><FaFacebook size={38} color="#664228" /></Link>
               <Link href={'https://youtube.com/@ANUVIBHA?si=qQYoxKXgqOdXtIAG'}><FaYoutube size={48} color="#664228" /></Link>
-        </div>
+        </div> */}
     </div>
   )
 }

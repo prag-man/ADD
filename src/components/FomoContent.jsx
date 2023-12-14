@@ -19,7 +19,7 @@ export const FomoContent = () => {
           alt="Heart"
           className="hidden md:block absolute left-1/3 -top-1/3  z-0"
         />
-        <p className="relative z-10 max-w-[65ch] text-lg ml-8 md:mt-4">
+        <p className="relative z-10 max-w-[65ch] text-lg ml-8 md:mt-4 text-center md:text-left">
           {
           "In Acharya Tulsi's perspective, the Anuvrat Movement is a project dedicated to the spiritual and moral renewal of life. Its aim extends beyond the societal and political welfare of individuals, focusing on their spiritual and moral betterment. Spiritual well-being is regarded as the highest and comprehensive good, encompassing both personal and communal welfare"          }{" "}
         </p>

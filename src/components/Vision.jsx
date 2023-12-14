@@ -103,10 +103,7 @@ const Vision = () => {
         </h1>
      <div className="flex ">
       <div className="md:mr-12 px-10 md:px-0">
-        <h2 className="text-2xl mt-4 md:text-left text-center font-semibold mx-auto md:mx-0 md:font-bold">
-          Why did we start this?
-        </h2>
-        <p className="max-w-[65ch] text-gray-500 mt-4 mx-auto md:mx-0 font-bold">
+        <p className="max-w-[65ch] text-gray-500 mt-4 mx-auto md:mx-0 font-bold text-center md:text-left">
        { "Anuvrat Digital Detox envisions a balanced, mindful lifestyle in today's digital age. Our mission is to empower individuals to prioritize well-being, fostering a deeper connection with their inner selves. Through awareness and intentional choices, we aim to inspire a cultural shift towards a healthier relationship with technology, enriching lives for a more fulfilling existence."}
         </p>
       </div>

@@ -5,6 +5,8 @@ import Riddle from '../../components/Riddle';
 import Quote from '../../components/Quotes';
 import Quiz from '../../components/Quiz';
 import { quotes, riddles, didYouKnowFacts, dosAndDonts, quizQnA } from '../../utils/data';
+import { FaAngleLeft } from 'react-icons/fa';
+import Link from 'next/link';
 
 export default function Page() {
   const [openSection, setOpenSection] = useState(null);
@@ -18,8 +20,12 @@ export default function Page() {
   };
 
   return (
-    <div className="flex flex-col min-h-screen justify-start items-start text-[#664228] pt-12">
-      <div className="max-w-3xl">
+    <div className="flex flex-col min-h-screen justify-start items-start text-[#664228]">
+      <Link href={'/'} className='flex items-center justifiy-center gap-2 text-black p-3'> 
+      <FaAngleLeft className="md:text-xl font-semibold cursor-pointer" />
+      <h3 className="md:text-lg font-semibold cursor-pointer">Home</h3>
+      </Link>
+      <div className="max-w-3xl pt-5">
         <section className="mb-8">
           <h2
             className={`text-2xl font-semibold flex p-4 justify-between w-screen items-center cursor-pointer ${

@@ -55,7 +55,7 @@ export default function Home() {
         </div>
       </div>
       <div className="flex flex-col w-full items-center bg gap-8">
-        <h1 className="text-2xl font-bold text-[#664228] bg-[#F0DFCD] w-full pt-7 pb-14 -mb-16">Yearly Pledges</h1>
+        <h1 className="md:text-2xl text-xl font-bold text-[#664228] bg-[#F0DFCD] w-full pt-7 pb-14 -mb-16">Want to be Yearly DIGICHAMP?</h1>
         <Tabs />
         <Vision/>
         <Gallery/>

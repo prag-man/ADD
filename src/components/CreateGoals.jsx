@@ -19,7 +19,7 @@ export const CreateGoals = () => {
           alt="Heart"
           className="hidden md:block absolute left-1/3 -top-1/3  z-0"
         />
-        <p className="relative z-10 max-w-[65ch] text-lg ml-8 md:mt-4">
+        <p className="relative z-10 max-w-[65ch] text-lg ml-8 md:mt-4 text-center md:text-left">
           {
             "At Anuvrat Digital Detox, we're dedicated to fostering a balanced relationship with technology. Our goal creation process focuses on personalized, achievable milestones that promote mindful tech usage, mental wellness, and community engagement. Together, we aim to empower individuals for a healthier, happier digital life."
           }{" "}
