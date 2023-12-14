@@ -17,7 +17,7 @@ export const AssesProgress = () => {
           width={300}
           height={300}
           alt="Heart"
-          className="absolute left-1/3 -top-1/3  z-0"
+          className="hidden md:block absolute left-1/3 -top-1/3  z-0"
         />
         <p className="relative z-10 max-w-[65ch] text-lg ml-8 md:mt-4">
           {
