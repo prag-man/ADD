@@ -207,7 +207,7 @@ export default function Home() {
                       required
                     />
                     <TextField
-                      label="What are the 5 you use most often?"
+                      label="What are the 5 apps you use most often?"
                       variant="outlined"
                       size="small"
                       inputRef={TopAppsRef}
