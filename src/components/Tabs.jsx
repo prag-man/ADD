@@ -27,6 +27,7 @@ const Tabs = () => {
               const entriesArray = Object.entries(data).map(([key, value]) => ({ id: key, ...value }));
               setEntries(entriesArray);
               let tempPledesList = entriesArray.map((entry)=>entry.data.pledges)
+              console.log(tempPledesList)
               tempPledesList.forEach((subList)=>{
                 subList.forEach((pledge)=>{
                     setAllPledges((prev)=>({
@@ -35,6 +36,7 @@ const Tabs = () => {
                     }))
                 })
               })
+              console.log(AllPledges)
               let tempAgeList = entriesArray.map((entry)=>entry.data.age)
               tempAgeList.forEach((age)=>{
                     setAgeGroup((prev)=>({
@@ -51,6 +53,8 @@ const Tabs = () => {
     },[])
 
     TempTop3 = Object.fromEntries(Object.entries(AllPledges).sort((a, b) => b[1] - a[1]).slice(0, 3))
+    console.log(AllPledges)
+    console.log(TempTop3)
 
     return <div className="flex flex-col w-full ">
         <div className="flex items-center justify-center">

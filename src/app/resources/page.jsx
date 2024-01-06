@@ -7,6 +7,8 @@ import Quiz from '../../components/Quiz';
 import { quotes, riddles, didYouKnowFacts, dosAndDonts, quizQnA } from '../../utils/data';
 import { FaAngleLeft } from 'react-icons/fa';
 import Link from 'next/link';
+import meta from 'js-meta';
+import DocCard from '../../components/DocCard.jsx';
 
 export default function Page() {
   const [openSection, setOpenSection] = useState(null);
@@ -25,6 +27,49 @@ export default function Page() {
       <FaAngleLeft className="md:text-xl font-semibold cursor-pointer" />
       <h3 className="md:text-lg font-semibold cursor-pointer">Home</h3>
       </Link>
+      <div className={`${openSection === 'banners' ? 'bg-[#F8F0E8]' : ''} mt-5 w-full`}>
+        <h2 className={`text-2xl font-semibold flex p-4 justify-between w-screen items-center cursor-pointer`}
+            onClick={() => toggleSection('banners')}
+          > Banners & Standees 
+          <RiArrowDownSLine className={`mx-2 transform ${openSection === 'banners' ? 'rotate-180' : 'rotate-0'}`} />
+          </h2>
+        <div className={`${openSection === 'banners' ? 'flex flex-wrap gap-4 p-5 justify-center items-center' : 'hidden'}`}>
+          <DocCard link='/b1.pdf' text='Banner - 1'  type='doc'/>
+          <DocCard link='/b2.pdf' text='Banner - 2' type='doc'/>
+          <DocCard link='/s1.pdf' text='Standee - 1' type='doc'/>
+          <DocCard link='/s2.pdf' text='ADD Standee' type='doc'/>
+          <DocCard link='/bq.pdf' text='Standee - Quotes' type='doc'/>
+          <DocCard link='/bp.pdf' text='Standee - Pledge' type='doc'/>
+          <DocCard link='/bqs.pdf' text='Standee - Quotes for School' type='doc'/>
+        </div>
+      </div>
+      <div className={`${openSection === 'games' ? 'bg-[#F8F0E8]' : ''} mt-5 w-full`}>
+        <h2 className={`text-2xl font-semibold flex p-4 justify-between w-screen items-center cursor-pointer`}
+            onClick={() => toggleSection('games')}
+          > Games
+          <RiArrowDownSLine className={`mx-2 transform ${openSection === 'games' ? 'rotate-180' : 'rotate-0'}`} />
+          </h2>
+        <div className={`${openSection === 'games' ? 'flex flex-wrap gap-4 p-5 justify-center items-center' : 'hidden'}`}>
+          <DocCard link='/chits.pdf' text='Chits' type='games'/>
+          <DocCard link='/Grid.pdf' text='Grid' type='games'/>
+          <DocCard link='/Diet Chart.pdf' text='Diet Chart' type='games'/>
+          <DocCard link='/Digimeter.pdf' text='Digimeter' type='games'/>
+          <DocCard link='/self tracker.pdf' text='Self-Tracker' type='games'/>
+        </div>
+      </div>
+      <div className={`${openSection === 'bm' ? 'bg-[#F8F0E8]' : ''} mt-5 w-full`}>
+        <h2 className={`text-2xl font-semibold flex p-4 justify-between w-screen items-center cursor-pointer`}
+            onClick={() => toggleSection('bm')}
+          > Bookmarks
+          <RiArrowDownSLine className={`mx-2 transform ${openSection === 'bm' ? 'rotate-180' : 'rotate-0'}`} />
+          </h2>
+        <div className={`${openSection === 'bm' ? 'flex flex-wrap gap-4 p-5 justify-center items-center' : 'hidden'}`}>
+          <DocCard link='/bm1.pdf' text='Bookmark - 1' type='bm'/>
+          <DocCard link='/bm2.pdf' text='Bookmark - 2' type='bm'/>
+          <DocCard link='/bm3.pdf' text='Bookmark - 3' type='bm'/>
+          <DocCard link='/bmmsd.pdf' text='MSD Bookmark' type='bm'/>
+        </div>
+      </div>
       <div className="max-w-3xl pt-5">
         <section className="mb-8">
           <h2
