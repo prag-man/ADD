@@ -22,7 +22,10 @@ const Gallery = () => {
   ];
 
   return (
-    <div className={`bg-[#664228] md:px-20 text-gray-300 w-full py-8 ${nunito.className} gallery`} id="gallery">
+    <div
+      className={`bg-[#664228] md:px-20 text-gray-300 w-full py-8 ${nunito.className} gallery`}
+      id="gallery"
+    >
       <div className="m-4 md:mx-8  flex md:justify-between md:items-center">
         <div className=" flex md:flex-row flex-col justify-between items-center">
           <div>
@@ -30,9 +33,17 @@ const Gallery = () => {
               We did a lot during this time
             </h1>
             <div className="flex opacity-80 gap-4 mt-4 items-center">
-              <Link href={'https://instagram.com/anuvrat_digitaldetox'}><FaInstagram size={40} color="white" /></Link>
-              <Link href={'https://www.facebook.com/anuvibha.page?mibextid=ZbWKwL'}><FaFacebook size={38} color="white" /></Link>
-              <Link href={'https://youtube.com/@ANUVIBHA?si=qQYoxKXgqOdXtIAG'}><FaYoutube size={48} color="white" /></Link>
+              <Link href={"https://instagram.com/anuvrat_digitaldetox"}>
+                <FaInstagram size={40} color="white" />
+              </Link>
+              <Link
+                href={"https://www.facebook.com/anuvibha.page?mibextid=ZbWKwL"}
+              >
+                <FaFacebook size={38} color="white" />
+              </Link>
+              <Link href={"https://youtube.com/@ANUVIBHA?si=qQYoxKXgqOdXtIAG"}>
+                <FaYoutube size={48} color="white" />
+              </Link>
             </div>
           </div>
 
@@ -67,6 +78,60 @@ const Gallery = () => {
             />
           </div>
         </div>
+      </div>
+      <div className="flex flex-wrap gap-6 mt-10 justify-center">
+        <Link href={"/album1"}>
+          <div className="relative group rounded-md hover:scale-105  overflow-hidden">
+            <Image
+              src={"/images/album1/Mukesh Patel Engineering College.jpeg"}
+              alt={`Album 1`}
+              width={300}
+              height={200}
+              className="opacity-75 transition-opacity duration-300"
+            />
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="text-center text-gray-200">
+                <h2 className="text-lg font-bold">Album1: Session Glimpse</h2>
+              </div>
+            </div>
+          </div>
+        </Link>
+        <Link href={"/album2"}>
+        <div className="relative group rounded-md hover:scale-105  overflow-hidden">
+            <Image
+              src={
+                "/images/album2/WhatsApp Image 2024-01-26 at 12.40.32 PM (2).jpeg"
+              }
+              alt={`Album 1`}
+              width={300}
+              height={200}
+              className="opacity-75 transition-opacity duration-300"
+            />
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="text-center text-gray-200">
+                <h2 className="text-lg font-bold">Album2: ADD books to life</h2>
+              </div>
+            </div>
+          </div>
+        </Link>
+        <Link href={"/album3"}>
+        <div className="relative group rounded-md hover:scale-105  overflow-hidden">
+            <Image
+              src={
+                "/images/album3/WhatsApp Image 2024-01-26 at 12.41.59 PM.jpeg"
+              }
+              alt={`Album 3`}
+              width={300}
+              height={200}
+              className="opacity-70 transition-opacity duration-300"
+            />
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="text-center text-gray-200">
+                <h2 className="text-lg font-bold">Album3: ADD spread</h2>
+              </div>
+            </div>
+          </div>
+        </Link>
       </div>
       {/* <div className="flex flex-wrap justify-center gap-4 md:gap-5 md:justify-start mt-14">
         {images.slice(1).map((image, index) => (
