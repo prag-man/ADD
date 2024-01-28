@@ -16,6 +16,7 @@
     "chart.js": "^4.4.0",
     "countries-list": "^3.0.6",
     "firebase": "^10.6.0",
+    "fs": "^0.0.1-security",
     "js-meta": "^0.2.0",
     "lodash": "^4.17.21",
     "next": "13.5.6",
