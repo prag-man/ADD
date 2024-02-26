@@ -100,9 +100,18 @@ export default function Page() {
         >
           <PDFViewer file="/chits.pdf" text="Chits" type="games" />
           <PDFViewer file="/Grid.pdf" text="Grid" type="games" />
-          <PDFViewer file="/Diet Chart.pdf" text="Diet Chart" type="games" />
+          <PDFViewer file="/Diet Chart English.pdf" text="Diet Chart" type="games" />
           <PDFViewer file="/Digimeter.pdf" text="Digimeter" type="games" />
-          <PDFViewer file="/self tracker.pdf" text="Self-Tracker" type="games" />
+          <PDFViewer
+            file="/self tracker.pdf"
+            text="Self-Tracker"
+            type="games"
+          />
+          <PDFViewer
+            file="/spin-pen.pdf"
+            text="Self-Tracker"
+            type="games"
+          />
         </div>
       </div>
       <div
